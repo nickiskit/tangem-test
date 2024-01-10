@@ -17,10 +17,20 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": [
+        "./src/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ]
+    }
   },
   "include": [
-    "src"
+    "src",
+    "custom.d.ts"
   ]
 }
