@@ -1,0 +1,46 @@
+@import "src/styles/var";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: $font-family-montserrat;
+  color: $white;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: -1.84px;
+  margin-bottom: 25px;
+}
+
+.discount {
+  font-family: $font-family-montserrat;
+  color: $gold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -1.6px;
+  background: $gold-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $transparent;
+  margin-bottom: 14px;
+}
+
+.instruction {
+  font-family: $font-family-montserrat;
+  color: $grey;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.08px;
+
+  .code {
+    color: $orange;
+  }
+}
