@@ -4,7 +4,10 @@ import { BUTTONS_TEXT } from '@root/constants/text';
 import styles from '@root/components/HeaderBanner/components/ButtonContent/buttonContent.module.scss';
 import { CloseIcon, MenuIcon } from '@root/icons/icons';
 
-export const HEADER_BANNER_BUTTON_CONTENT: Record<string, (close?: () => void) => ReactNode> = {
+export const HEADER_BANNER_BUTTON_CONTENT: Record<
+	string,
+	(close?: () => void) => ReactNode
+> = {
 	[EDisplayType.DESKTOP.toString()]: (close?: () => void) => (
 		<>
 			<button className={styles.button}>
@@ -12,7 +15,9 @@ export const HEADER_BANNER_BUTTON_CONTENT: Record<string, (close?: () => void) =
 					{BUTTONS_TEXT.HEADER_BANNER_BUTTON}
 				</span>
 			</button>
-			<button className={styles.actionButton} onClick={close}>
+			<button
+				className={styles.actionButton}
+				onClick={close}>
 				<CloseIcon />
 			</button>
 		</>

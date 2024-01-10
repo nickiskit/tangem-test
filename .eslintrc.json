@@ -33,6 +33,7 @@
             "bracketSameLine": true,
             "singleAttributePerLine": true,
             "trailingComma" : "none"
-        }]
+        }],
+        "react/prop-types": "off"
     }
 }
