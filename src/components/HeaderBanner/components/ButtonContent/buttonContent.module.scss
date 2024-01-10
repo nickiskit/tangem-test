@@ -1,0 +1,44 @@
+@import "src/styles/var";
+
+.root {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.button {
+  width: 115px;
+  height: 38px;
+  padding: 10px 14px;
+  border-radius: 100px;
+  background: $white;
+  backdrop-filter: blur(15px);
+  border: none;
+  color: $button-text;
+  cursor: pointer;
+}
+
+.buttonText {
+  text-shadow: $button-text-shadow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  background: $button-text-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: $transparent;
+}
+
+.actionButton {
+  width: 24px;
+  height: 24px;
+  background: $transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  @media #{$mobile} {
+    width: 30px;
+    height: 30px;
+  }
+}

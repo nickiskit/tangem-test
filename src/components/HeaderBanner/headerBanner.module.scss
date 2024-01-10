@@ -1,0 +1,21 @@
+@import "src/styles/var";
+
+.root {
+  height: 54px;
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+  background: $dark-background;
+
+  @media #{$desktop} {
+    padding: 0 22px 0 7px;
+  }
+
+  @media #{$tablet} {
+    padding: 0 24px 0 0 ;
+  }
+
+  @media #{$mobile} {
+    padding: 0 24px 0 0 ;
+  }
+}

@@ -1,0 +1,47 @@
+@import "src/styles/var";
+
+.root {
+  position: absolute;
+  opacity: 0;
+  right: 34px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 36px;
+  width: 600px;
+  height: 349px;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 16px;
+  background: $dark-background no-repeat center;
+  background-size: cover;
+  box-shadow: $banner-shadow;
+
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+
+  @media #{$mobile} {
+    right: unset;
+    width: 100%;
+    border-radius: 0;
+    background-position-x: 80%;
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-right: 15px;
+
+  @media #{$mobile} {
+    width: 100%;
+    padding-right: 0;
+  }
+}

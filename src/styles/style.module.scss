@@ -1,0 +1,18 @@
+@import "var";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 200%;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-montserrat;
+  overflow: hidden auto;
+}

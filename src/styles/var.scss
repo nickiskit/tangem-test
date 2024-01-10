@@ -1,0 +1,34 @@
+/* Colors */
+$dark-background: linear-gradient(180deg, #101010 0%, #0B0B0B 100%);
+$grey-background: rgba(255, 255, 255, 0.10);
+$transparent: transparent;
+$orange: #D7A830;
+$white: #FFFFFF;
+$gold: rgba(210, 152, 26, 0.60);
+$grey: #6C6C70;
+$button-text: #0B0B0B;
+$button-text-shadow: 0px 0px 30px rgba(102, 204, 255, 0.20);
+
+
+/* Gradients */
+$gold-gradient: linear-gradient(90deg, #7D5317, #EDDF95);
+$button-text-gradient:  linear-gradient(90deg, rgba(129,129,129,255), #0B0B0B 50%);
+
+
+/* Shadows */
+$banner-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.45);
+
+
+/* Fonts */
+$font-family-montserrat: 'Montserrat', Arial, Helvetica, sans-serif;
+
+
+/* Displays width */
+$mobile-max: 833;
+$tablet-min: $mobile-max + 1;
+$tablet-max: 1727;
+$desktop-min: $tablet-max + 1;
+
+$mobile: "(max-width: #{$mobile-max}px)";
+$tablet: "(min-width: #{$tablet-min}px) and (max-width: #{$tablet-max}px)";
+$desktop: "(min-width: #{$desktop-min}px)";

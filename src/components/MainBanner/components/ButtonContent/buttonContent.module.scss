@@ -1,0 +1,10 @@
+@import "src/styles/var";
+
+.root {
+  width: 24px;
+  height: 24px;
+  background: $transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
