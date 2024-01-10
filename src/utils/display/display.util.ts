@@ -6,14 +6,25 @@ import {
 	DESKTOP_MIN
 } from '@root/constants/width';
 
-export const getDisplayType = (width: number) => {
+/**
+ * Get display type by window innerWidth
+ * */
+export const getDisplayType = () => {
+	const width = window.innerWidth;
+
 	if (width <= MOBILE_MAX) return EDisplayType.MOBILE;
 	if (width >= TABLET_MIN && width <= TABLET_MAX) return EDisplayType.TABLET;
 
 	return EDisplayType.DESKTOP;
 };
 
-export const needToChangeType = (type: EDisplayType, width: number) => {
+/**
+ * Check do need to change the type after window resize
+ * @param {EDisplayType} type - Current display type
+ * */
+export const needToChangeType = (type: EDisplayType) => {
+	const width = window.innerWidth;
+
 	switch (type) {
 		case EDisplayType.DESKTOP:
 			return width < DESKTOP_MIN;

@@ -18,10 +18,8 @@ const LayoutComponent: FC<TLayoutProps> = ({ children }) => {
 	);
 
 	const handleWindowResize = useCallback(() => {
-		const width = window.innerWidth;
-
-		if (needToChangeType(type, width)) {
-			const newType = getDisplayType(width);
+		if (needToChangeType(type)) {
+			const newType = getDisplayType();
 			dispatch(changeType(newType));
 		}
 	}, [type]);

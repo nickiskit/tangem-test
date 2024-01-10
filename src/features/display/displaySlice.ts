@@ -7,7 +7,7 @@ export type DisplayState = {
 };
 
 const initialState: DisplayState = {
-	type: getDisplayType(window.innerWidth)
+	type: getDisplayType()
 };
 
 export const displaySlice = createSlice({

@@ -12,10 +12,10 @@ type TMainBannerComponentProps = {
 }
 
 const MainBannerComponent: FC<TMainBannerComponentProps> = memo(({isShown}) => {
-	const [position, setPosition] = useState<{top?: number} | {bottom?: number}>(getPosition(window.innerHeight));
+	const [position, setPosition] = useState<{top?: number} | {bottom?: number}>(getPosition());
 
 	const handleWindowResize = useCallback(() => {
-		const newPosition = getPosition(window.innerHeight)
+		const newPosition = getPosition()
 
 		setPosition(newPosition)
 	}, []);
