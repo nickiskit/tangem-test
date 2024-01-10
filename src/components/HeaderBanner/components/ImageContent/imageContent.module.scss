@@ -1,0 +1,22 @@
+@import "src/styles/var";
+
+.root {
+  height: 54px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media #{$desktop} {
+    width: 212px;
+  }
+
+  @media #{$tablet} {
+    width: 185px;
+    background-position-x: -27px;
+  }
+
+  @media #{$mobile} {
+    min-width: 128px;
+    max-width: 128px;
+    background-position-x: -84px;
+  }
+}

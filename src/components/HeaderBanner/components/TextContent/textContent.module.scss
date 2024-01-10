@@ -1,0 +1,29 @@
+@import "src/styles/var";
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 12px;
+}
+
+.text {
+  font-family: $font-family-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.048px;
+  color: $white;
+}
+
+.boldText {
+  font-weight: 600;
+}
+
+.orangeText {
+  color: $orange;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+}
