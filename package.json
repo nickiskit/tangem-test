@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack serve --mode development --config ./webpack/dev.js",
     "build": "webpack --mode production --config ./webpack/prod.js",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d dist",
     "lint:script": "eslint \"./src/**/{*.ts,*.tsx}\" --fix",
     "lint:style": "stylelint \"./src/**/*.scss\" --fix"
   },
